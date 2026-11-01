@@ -49,7 +49,7 @@ pip install west
 Initialize and clone the Microchip Zephyr SDK repositories:
 
 ```bash
-west init -m https://github.com/Zephyr4Microchip/microchip-zsdk mchp_zephyrproject
+west init -m https://github.com/gcolombo-mchp/microchip-zsdk mchp_zephyrproject
 cd mchp_zephyrproject
 west update
 ```
