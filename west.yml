@@ -9,11 +9,12 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: microchip
       url-base: https://github.com/Zephyr4Microchip
-
+    - name: gcolombo-remote
+      url-base: https://github.com/gcolombo-mchp
   projects:
     - name: zephyr
       # Zephyr is fetched from the following remote and revision.
-      remote: microchip
+      remote: gcolombo-remote
       repo-path: microchip-zephyr
       revision: 82743e19f04810c291fd05540eab72d73ee51ce5 
       import:
@@ -36,7 +37,7 @@ manifest:
     # Modules in zephyr repository west.yml but excluded from the name-allowlist are defined here.
     - name: hal_microchip
       # Overrides hal_microchip from Zephyr's west.yml with Microchip's version.
-      remote: microchip
+      remote: gcolombo-remote
       repo-path: microchip-hal
       revision: 71e086476f4179345737ee3a78f0e63ff493a12b 
       path: modules/hal/microchip
