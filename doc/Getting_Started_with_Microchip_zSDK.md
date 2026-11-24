@@ -61,7 +61,7 @@ west update
 Install additional Python packages required by Zephyr:
 
 ```bash
-west packages pip --install
+python -m pip install @((west packages pip) -split ' ')
 ```
 
 ### Step 6: Export CMake Package
